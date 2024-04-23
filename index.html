@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <title>Angular Demo App</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="./app.js"></script>
+    <script src="./components/profile/profile-list.component.js"></script>
+    <script src='./scripts/angular-route.min.js'></script>
+
+</head>
+
+<body ng-controller="mainCtrl">
+    <p id="descp">Angular app</p>
+    <p>last name: <input ng-model="lastName"/></p>
+     first name is {{firstName}} and last name is {{lastName}}
+    <br/>
+    <br/>
+    <button class="alret-button" ng-click="alertButton()">Alert something</button>   <br/>     <br/>
+    <div my-directive></div>
+
+    <br/>
+    <details-comp phone-no=phoneNo state=state username=username></details-comp>
+
+    user phone no is {{phoneNo}}  <br/>
+    user state is {{state}}
+    <br/>  <br/>
+    <ul>
+        <li>
+            <a href="#!home">Home</a>
+        </li>
+        <li>
+            <a href="#!users">Users</a>
+        </li>
+    </ul>
+<ng-view></ng-view>
+</body>
+
+</html>

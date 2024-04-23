@@ -1,0 +1,14 @@
+.desc{
+    color: blueviolet;
+
+}
+
+.directive{
+    color: blueviolet;
+}
+
+#alret-button{
+    background-color: red;
+    padding: 5px;
+    margin-left: 5%;
+}

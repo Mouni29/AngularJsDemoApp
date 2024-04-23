@@ -1,0 +1,9 @@
+<span>Search by value
+
+<input type="text" ng-model="val"/>
+</span>
+<ul>
+    <li ng-repeat=" user in profiles | filter : val">
+            {{ user.username | uppercase}}
+    </li>
+</ul>
